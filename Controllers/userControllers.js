@@ -23,6 +23,7 @@ const userCreateData = async (req, res) => {
     });
 
     await userData.save();
+    console.log(userData)
 
     res.json({
       success: true,
